@@ -5,10 +5,10 @@ FROM openjdk:11-jdk-slim
 WORKDIR /app
 
 # Copy the Java file into the container
-COPY HelloWorld.java .
+COPY ad.java .
 
 # Compile the Java program
-RUN javac HelloWorld.java
+RUN javac ad.java
 
 # Command to run the compiled Java program
-CMD ["java", "HelloWorld"]
+CMD ["java", "ad"]
